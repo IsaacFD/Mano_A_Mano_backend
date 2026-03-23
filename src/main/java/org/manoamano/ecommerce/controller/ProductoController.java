@@ -1,11 +1,13 @@
 package org.manoamano.ecommerce.controller;
 
 import java.math.BigDecimal;
+
 import java.util.List;
 
 import org.manoamano.ecommerce.model.Producto;
 import org.manoamano.ecommerce.service.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/ecommerce/productos/")
+@CrossOrigin (origins="34.201.41.216")
 public class ProductoController {
 
 	private final ProductoService productoService;
