@@ -2,6 +2,7 @@ package org.manoamano.ecommerce.controller;
 
 import java.util.List;
 
+
 import org.manoamano.ecommerce.dto.ClaveDto;
 import org.manoamano.ecommerce.model.Usuario;
 import org.manoamano.ecommerce.service.UsuarioService;
@@ -14,12 +15,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/ecommerce/usuarios/")
-@CrossOrigin (origins="34.201.41.216", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
+@CrossOrigin (origins="https://mano-a-mano-frontend.vercel.app/")
 public class UsuarioController {
 
 	private final UsuarioService usuarioService;
