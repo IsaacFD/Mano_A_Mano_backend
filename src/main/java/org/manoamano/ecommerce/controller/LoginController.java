@@ -1,6 +1,7 @@
 package org.manoamano.ecommerce.controller;
 
 import java.util.Calendar;
+
 import java.util.Date;
 
 import org.manoamano.ecommerce.config.JwtFilter;
@@ -12,7 +13,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.jsonwebtoken.Jwts;
@@ -20,7 +20,7 @@ import jakarta.servlet.ServletException;
 
 @RestController
 @RequestMapping(path = "/ecommerce/login/")
-@CrossOrigin (origins="34.201.41.216", methods= {RequestMethod.POST, RequestMethod.PUT})
+@CrossOrigin (origins="https://mano-a-mano-frontend.vercel.app/")
 public class LoginController {
 
 	private final UsuarioService usuarioService;

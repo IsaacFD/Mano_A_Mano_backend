@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/ecommerce/productos/")
-@CrossOrigin (origins="34.201.41.216")
+@CrossOrigin (origins="https://mano-a-mano-frontend.vercel.app/")
 public class ProductoController {
 
 	private final ProductoService productoService;

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/ecommerce/carrito/")
-@CrossOrigin (origins="34.201.41.216")
+@CrossOrigin (origins="https://mano-a-mano-frontend.vercel.app/")
 public class CarritoController {
 
 	private final CarritoService carritoService;

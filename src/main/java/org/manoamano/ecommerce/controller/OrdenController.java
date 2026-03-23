@@ -1,6 +1,7 @@
 package org.manoamano.ecommerce.controller;
 
 import java.math.BigDecimal;
+
 import java.util.List;
 
 import org.manoamano.ecommerce.model.Orden;
@@ -14,13 +15,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/ecommerce/ordenes/")
-@CrossOrigin (origins="34.201.41.216", methods= {RequestMethod.GET, RequestMethod.PUT, RequestMethod.DELETE})
+@CrossOrigin (origins="https://mano-a-mano-frontend.vercel.app/")
 public class OrdenController {
 
 	private final OrdenService ordenService;
